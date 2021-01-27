@@ -2,7 +2,7 @@
 
 六种license区别：
 
-![img](main.assets/1336977-20191111131043256-1517901458.png)
+<img src="main.assets/1336977-20191111131043256-1517901458.png" alt="img" style="zoom: 80%;" />
 
 ## 资源
 
@@ -21,12 +21,8 @@
 
 # 做一些改动
 
-# add changes to Index
-# git add <filename>, i.e.
+# add changes to Index, i.e.
 git add *
-# 撤销在add中的修改
-# git reset HEAD <filename>
-
 # commit to HEAD
 git commit -m "代码提交信息"
 
@@ -36,5 +32,22 @@ git push origin main
 
 # 查看分支
 git branch
+# 创建分支
+git checkout -b dev
+# 切换分支
+git checkout main
+# 删除分支
+git branch -d dev
+# 推送分支, i.e.
+git push origin dev
+
+# 更新本地为最新改动
+git pull
+# merge
+git merge <branch>
+# 冲突
+git add <filename>
+# 查看不同
+git diff <source_branch> <target_branch>
 ```
 
